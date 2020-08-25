@@ -1,0 +1,17 @@
+server:
+  port: 10010
+spring:
+  application:
+    name: healthzuul
+#网关前缀
+zuul:
+  prefix: /api
+  ribbon:
+    eager-load:
+      enabled: true
+#注册地址
+eureka:
+  client:
+    service-url:
+      defaultZone: http://localhost:10086/eureka
+
